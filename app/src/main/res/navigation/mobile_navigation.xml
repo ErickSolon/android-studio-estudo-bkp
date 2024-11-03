@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.estudo.android.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.estudo.android.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.estudo.android.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_nova_tela"
+        android:name="com.estudo.android.ui.novatela.NovaTela"
+        android:label="@string/title_nova_tela"
+        tools:layout="@layout/fragment_nova_tela" />
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.estudo.android.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.estudo.android.MainActivity2"
+        android:label="activity_main2"
+        tools:layout="@layout/activity_main2" />
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="com.estudo.android.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
+</navigation>
